@@ -3,18 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Заголовок страницы</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Карина — Мастер маникюра в Краснодаре</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-      <h2>тестовая страница</h2>
-    </header>
-    
-    <main>
-    </main>
 
-    <footer>
+    <!-- HERO -->
+    <section class="card">
+        <div class="hero-content">
+            <div class="hero-photo">
+                <img src="images/karina.jpg" alt="Карина — мастер маникюра">
+            </div>
+            <div class="hero-text">
+                <p class="hero-subtitle">Мастер маникюра · Краснодар</p>
+                <h1>Карина</h1>
+                <p class="hero-slogan">Красота — в каждой детали</p>
+                <div class="hero-buttons">
+                    <a href="#contacts" class="btn btn-primary">Записаться</a>
+                    <a href="https://t.me/karina_nails" target="_blank" class="btn btn-secondary">Telegram</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- УСЛУГИ -->
+    <section class="card" id="services">
+        <h2 class="section-title">Услуги</h2>
+        <p class="section-subtitle">Работаю с лучшими материалами и уделяю внимание каждой детали</p>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Маникюр классический</h3>
+                <p class="service-desc">Аккуратная обработка кутикулы, придание формы</p>
+                <p class="service-price">1 200 ₽</p>
+            </div>
+            <div class="service-card">
+                <h3>Маникюр + покрытие гель-лак</h3>
+                <p class="service-desc">Стойкое покрытие, любой цвет из палитры</p>
+                <p class="service-price">1 800 ₽</p>
+            </div>
+            <div class="service-card">
+                <h3>Наращивание ногтей</h3>
+                <p class="service-desc">Гель или акригель, моделирование любой формы</p>
+                <p class="service-price">2 800 ₽</p>
+            </div>
+            <div class="service-card">
+                <h3>Дизайн (за 1 ноготь)</h3>
+                <p class="service-desc">Роспись, стразы, втирка, фольга</p>
+                <p class="service-price">от 50 ₽</p>
+            </div>
+            <div class="service-card">
+                <h3>Педикюр</h3>
+                <p class="service-desc">Аппаратный педикюр + покрытие</p>
+                <p class="service-price">2 200 ₽</p>
+            </div>
+            <div class="service-card">
+                <h3>Снятие покрытия</h3>
+                <p class="service-desc">Аккуратное снятие без вреда для ногтей</p>
+                <p class="service-price">300 ₽</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ПОЧЕМУ Я -->
+    <section class="card">
+        <h2 class="section-title">Почему выбирают меня</h2>
+
+        <div class="why-grid">
+            <div class="why-item">
+                <div class="why-icon">✦</div>
+                <h3>Опыт более 5 лет</h3>
+                <p>Постоянно учусь и слежу за трендами nail-индустрии</p>
+            </div>
+            <div class="why-item">
+                <div class="why-icon">✦</div>
+                <h3>Стерильность</h3>
+                <p>Все инструменты проходят полную дезинфекцию и стерилизацию</p>
+            </div>
+            <div class="why-item">
+                <div class="why-icon">✦</div>
+                <h3>Качественные материалы</h3>
+                <p>Работаю только на премиальных брендах</p>
+            </div>
+            <div class="why-item">
+                <div class="why-icon">✦</div>
+                <h3>Уютная атмосфера</h3>
+                <p>Комфортный кабинет, чай, музыка и приятная беседа</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ГАЛЕРЕЯ -->
+    <section class="card">
+        <h2 class="section-title">Мои работы</h2>
+        <p class="section-subtitle">Немного из портфолио</p>
+
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="images/work-1.jpg" alt="Работа 1"></div>
+            <div class="gallery-item"><img src="images/work-2.jpg" alt="Работа 2"></div>
+            <div class="gallery-item"><img src="images/work-3.jpg" alt="Работа 3"></div>
+            <div class="gallery-item"><img src="images/work-4.jpg" alt="Работа 4"></div>
+            <div class="gallery-item"><img src="images/work-5.jpg" alt="Работа 5"></div>
+            <div class="gallery-item"><img src="images/work-6.jpg" alt="Работа 6"></div>
+        </div>
+    </section>
+
+    <!-- КОНТАКТЫ -->
+    <section class="card" id="contacts">
+        <h2 class="section-title">Связаться со мной</h2>
+        <p class="section-subtitle">Отвечаю быстро, записываю заранее</p>
+
+        <div class="contacts-grid">
+            <a href="tel:+79990000000" class="contact-card">
+                <div class="contact-icon">📞</div>
+                <p class="contact-label">Телефон</p>
+                <p class="contact-value">+7 (999) 000-00-00</p>
+            </a>
+            <a href="https://t.me/karina_nails" target="_blank" class="contact-card">
+                <div class="contact-icon">✈️</div>
+                <p class="contact-label">Telegram</p>
+                <p class="contact-value">@karina_nails</p>
+            </a>
+            <a href="https://wa.me/79990000000" target="_blank" class="contact-card">
+                <div class="contact-icon">💬</div>
+                <p class="contact-label">WhatsApp</p>
+                <p class="contact-value">+7 (999) 000-00-00</p>
+            </a>
+            <a href="https://instagram.com/karina_nails" target="_blank" class="contact-card">
+                <div class="contact-icon">📷</div>
+                <p class="contact-label">Instagram</p>
+                <p class="contact-value">@karina_nails</p>
+            </a>
+        </div>
+
+        <p class="address">📍 г. Краснодар, ул. Красная, 100 (адрес уточняйте при записи)</p>
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 Карина · Мастер маникюра · Краснодар</p>
     </footer>
 
     <script src="script.js"></script>
